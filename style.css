@@ -1,0 +1,81 @@
+/* Default styles */
+
+body {
+  text-align: center;
+}
+
+h1 {
+  display: none;
+}
+
+/* ============= */
+
+/* 1280px to 1024px - Dekstop */
+/* 1024px to 768px - Tablet landscape mode */
+/* 768px to 480px  - tablet */
+/* 480px and less - phone landscape mode and smaller */
+/* ============= */
+
+/* Media Query styles  */
+
+/* Small devices: styles applied from 0px to 480px || apply styles for everything below 480px */
+@media (max-width: 480px) {
+  body {
+    background: red;
+  }
+
+  .small-devices h1 {
+    display: block;
+    font-size: 30px;
+    border: 1px solid black;
+  }
+}
+
+/* Small  phones to small tablets: 481px to 767px*/
+@media only screen and (min-width: 481px) and (max-width: 767px) {
+  body {
+    background-color: cyan;
+  }
+
+  .tablet h1 {
+    display: block;
+  }
+}
+
+/* small tablet to big tablet - from 768px to 1023px */
+@media (min-width: 768px) and (max-width: 1023px) {
+  body {
+    background-color: orange;
+  }
+
+  .normal h1 {
+    display: block;
+  }
+}
+
+@media (min-width: 1024px) and (max-width: 1280px) {
+  body {
+    background-color: violet;
+  }
+  .laptop h1 {
+    display: block;
+    font-size: 40px;
+  }
+}
+
+@media (min-width: 1281px) {
+  body {
+    background-color: pink;
+    text-align: left;
+  }
+  .monitor h1 {
+    display: block;
+    font-size: 50px;
+    border: 1px solid black;
+  }
+}
+@media print {
+  body {
+    color: green;
+  }
+}
